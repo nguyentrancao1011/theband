@@ -1,0 +1,85 @@
+/* media query */
+/*  PC: >=1024px
+    tablet: >= 740px & <1024
+    mobile: < 740px
+*/
+/* Tablet */
+/* Pc */
+@media screen and (min-width: 1024px){
+    #header .mobile-menu-btn{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px){
+    #header .mobile-menu-btn{
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 739px){
+    #header{
+        overflow: hidden;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #nav,
+    #nav li a,
+    #nav > li{
+        display: block;
+    }
+    /* con dau tien cua the nav bi an theo thuoc tinh display: block; */
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    /* content member */
+    #content .member{
+        display: block;
+    }
+
+    #content .member-list img{
+        width: 60%;
+        height: 100%;
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+    #content .member-name{
+        margin: 16px 0;
+    }
+    #content .places-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #content .place-img{ 
+        height: 100%;
+    }
+    #content .places-item{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 16px;
+    }
+    .contact-item .form-name-email,
+    #contact .contact-list{
+        display: block;
+    }
+    .form-control,
+    #contact .contact-item{
+        width: 100%;
+    }
+    .contact-item p{
+        margin-bottom: 10px;
+    }
+    .email-user{
+        margin-top: 8px;
+    }
+
+    .place-buy-btn,
+    .submit-btn{
+        width: 100%;
+    }
+}
